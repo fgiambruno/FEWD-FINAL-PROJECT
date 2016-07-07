@@ -98,6 +98,13 @@ a.nav-active {
     color: yellow;
     overflow: hidden;
 }
+.nav img{
+  width: 70px;
+  float: left;
+  padding-left: 20px;
+  padding-top: 10px;
+  background-color: transparent;
+}
 
 h1{
   font-family: "Futura";
