@@ -1,19 +1,9 @@
-/*! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/ */
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
 
 html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    box-shadow: border-box;
 }
 
 /*image*/
@@ -29,28 +19,35 @@ header {
     background-image: url("dog-back2.jpg");
 
 }
-/*ul {
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     top: 20px;  
 }
-.active {
+
+.nav .active {
     background-color: #4CAF50;
     color: white;
 }
+
+/*.nav .scrolling {
+    background-color: #5cb85c;
+}*/
 
 li {
     color: white;
     display: inline;
     float: right;
-}*/
+     padding-right: 20px;
+
+}
 nav {
     width:100%;
     /*background-color:rgb(240,240,240);
     border:solid 1px rgb(220,220,220);*/
     padding:0 12px;
-    position: absolute;
+    position: fixed;
     top: 0;
     display: inline;
     float: right;
@@ -65,34 +62,41 @@ color: rgba(1, 1, 1, 0.8);*/
 
 
 nav.stick {
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
     z-index: 10000;
     margin-top:12px;
+    position: relative;
+    overflow: hidden;
 }
 
 nav ul {
     list-style-type:none;
     margin:0;
     padding:0;
+    overflow: hidden;
 }
 
 
 nav li a {
     color: white;
-    /*font-weight:300;*/
-    font-family: "Futura";
+    font-weight: lighter;
+    font-family: "Avenir";
     font-style: sans-serif;
-    font-size: 40 px;
+    font-size: 1.5em;
     text-decoration: none;
     float: right;
     padding-right: 20px;
     padding-left: 20px; 
     padding-top: 20px;
+    overflow: hidden;
+    border: 1px;
+
 }
 
 a.nav-active {
     color: yellow;
+    overflow: hidden;
 }
 
 h1{
@@ -107,56 +111,165 @@ h1{
   top: 40%;
   left: 33%;
 }
+h2{
+  font-size: 2em;
+  font-family: "Futura";
+  font-style: sans-serif;
+  text-align: center;
+  padding-top: 30px;
+  font-weight: bold;
+}
 
-.donate {
+h3 {
+  font-size: 2em;
+  font-family: "Futura";
+  font-style: sans-serif;
+}
+h4{
+  font-size: 2em;
+  font-family: "Futura";
+  font-style: sans-serif;
+}
+
+/*.adopt p{
+  color: white;
+  font-weight: normal;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-align: center;
+  padding-top: 30px;
+}*/
+
+.row1{
+  display: inline;
+}
+.row2 {
+  display: inline;
+}
+#dog1, #dog3, #dog6, #dog8 {
+  width: 33%;
+  height: 250px;
+  background-color: violet;
+  float: left;
+  /*background-image: url("../img/adopt1.jpg");*/
+}
+#dog2, #dog4, #dog5, #dog7{
+  width: 33%;
+  height: 250px;
+  background-color: #272727;
+  float: left;
+}
+#dog5{
+  background-color: white;
+  text-align: center;
+}
+#dog5 p{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.about {
+  /*width: 100%;*/
+  text-align: center;
+  background-color: #Ffffff;
+  height: 500px;
+  padding-top: 100px;
+ /* padding: 200px 50px 200px 50px;*/
+   /*background-image: url("donate.jpg");*/
+   display: inline-block;
+}
+.about p, h4{
+  float: right;
+  width: 30%;
+  padding-right: 20%;
+}
+
+.about img{
+  height: 400px;
+  /*width: 100%;*/
+  padding-left: 20%;
+  float: left;
+}
+
+#donate{
+  background-color: blue;
+  float: right;
+  width: 15%;
+  /*padding-right: 25%;*/
+  border: 2px solid;
+  border-radius: 25px;
+
+}
+
+/*.donate img{
+  width: 30%;
+  float: right;
+}*/
+
+.volunteer {
+  /*background-color: #ffffff;*/
+  height: 100px;
+  text-align: center;
+  padding: 200px 50px 200px 50px;
+  background-image: url("../img/volunteer.jpg");
+  color: #000000;
+}
+
+.volunteer img {
+  clear: both;
+  width: 100%;
+  position: relative;
+}
+.volunteer p, h3 {
+  /*color: white;*/
+  background-color: white;
+  margin: 0 auto;
+  width: 33%;
+  /*padding-right: 33%;
+  padding-left: 33%;*/
+}
+.volunteer p {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.volunteer h3 {
+   padding-top: 20px; 
+}
+/*.volunteer text{
+background-color: #ffffff;
+border: 1px;
+border-color: red;
+
+}*/
+/*.donate{
   background-color: #EFEFF1;
   height: 100px;
   width: 100%;
+  text-align: center;
+}*/
+
+footer {
+  background-color: #2C2C2F;
+  height: 300px;
+}
+footer p{
+  color: #ffffff;
+  text-align: center;
+
+}
+footer img{
+  padding-top: 150px;
+  /*width: 100%;*/
+  height: 100px;
+  padding-left: 42%;
+}
+.filter{
+  text-align: center;
+  color: #ffffff;
+  font-size: 1em;
 }
 
-h2{
-  position: absolute; 
-  top: 400px;  
-  align:center;
-  background-color: #ffffff ;
-  margin: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-/*#adoptbutton{
-   opacity: 0.5;
-    filter: alpha(opacity=50);
-}*/
 
-/*/h2{
-  font-family: "Gill";
-  font-style: sans-serif;
-  position: absolute; 
-  top: 250px;  
-  align:center;
-  color: #5776F0;
-  font-size: 20 px;
-  text-decoration: none;
-}*/
-
-
-/*.options {
-  color: #5776F0;
-  font-family: "Futura";
-  font-style: sans-serif;
-  font-size: 20 px;
-}*/
-
-/*a {
-  color: #5776F0;
-  font-family: "Futura";
-  font-style: sans-serif;
-  font-size: 20 px;
-  display: inline;
-  text-decoration: none;
-}*/
 /*
 .options{
   float: left;
@@ -168,26 +281,6 @@ h2{
   
 }
 
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- 
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
 
 /*hamburger styling*/
 /*.hamburger{
@@ -195,135 +288,30 @@ h2{
   float: right;
   margin: 0em;
 }*/
-/*/
 
 
-hr {
+
+/*hr {
     display: block;
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
-}
+}*/
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
 
-/*audio,
-canvas,
-iframe,
-img
-svg,
-video {
-    vertical-align: middle;
-}
 
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
 
 /*
  * Allow only vertical resizing of textareas.
- */
+
 
 textarea {
     resize: vertical;
 }*/
 
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
 
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers:
- * http://juicystudio.com/article/screen-readers-display-none.php
- */
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
 
 /*
  * Clearfix: contain floats
