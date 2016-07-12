@@ -143,6 +143,7 @@ h4{
   font-family: "Futura";
   font-style: sans-serif;
   margin-bottom: 0px;
+  padding-top: 8%;
 }
 
 /*-----------------ADOPT-----------------*/
@@ -242,8 +243,8 @@ img {
 .about {
   /*width: 100%;*/
   text-align: center;
-  background-color: #Ffffff;
-  height: 500px;
+  background-color: rgb(255,64,74);/*Ffffff;*/
+/*  height: 500px;*/
   padding-top: 100px;
   display: inline-block;
 }
@@ -252,13 +253,18 @@ img {
   float: right;
   width: 27%;
   margin-right: 20%;
+  /*padding-top: 8%;*/
 }
 
-.about img{
-  height: 400px;
+/*.about img*/
+.imageCircle{
+  border-radius: 50%;
+  height: 80%;
   /*width: 100%;*/
-  padding-left: 20%;
+  padding-left: 10%;
   float: left;
+  padding-top: 6%;
+  /*padding-bottom: 10%;*/
 }
 
 hr {
@@ -284,7 +290,7 @@ hr {
 }*/
 
 .donateButton {
-  background-color: white;
+  background-color: rgb(255,64,74);
  /* border: 2px;*/
   border-color: black;
   color: black;
@@ -294,6 +300,7 @@ hr {
   width: 20%;
   height: 40px;
   text-align: center;
+ margin-top: 5%;
 }
 
 .donateButton:hover { 
@@ -528,3 +535,5 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+

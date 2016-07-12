@@ -18,8 +18,8 @@ $(document).ready(function() {
 
 });
 
-// $(document).ready(function() {
-//   var h2 = $( window ).height();
-//   $(".about").height(h2);
+$(document).ready(function() {
+  var h2 = $( window ).height();
+  $(".about").height(h2);
 
-// });
+});
