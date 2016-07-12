@@ -12,7 +12,7 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
         <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
     </head>
 
@@ -53,9 +53,12 @@
                     <div id="dog6"><img src="img/adopt6.jpg" alt="Chicago"></div>
                     <div id="dog7"><img src="img/adopt5.jpg" alt="Chicago"></div>
                     <div id="dog8"><img src="img/adopt7.jpg" alt="Chicago"></div> 
-                    <div id="dog8"><img src="img/adopt8.jpg" alt="Chicago"></div> 
+                    <div class="wrapper" id="dog8"><span class="text">
+                    14
+                     </span><img src="img/adopt8.jpg" alt="Chicago"></div> 
                 </div>   
             </div>
+           
             <div class="about">
                 <a href="" name="about"></a>
                 <img src="img/donate-3.jpg" alt="Chicago">
@@ -63,7 +66,11 @@
                 <h4>Our story</h4>
                 <hr>
                 <p>Bacon ipsum dolor amet sed tail pork belly t-bone, hamburger tenderloin jowl ground round ham cupidatat salami. Spare ribs swine mollit, beef.</p>
-                <p id="donate">Donate</p>
+
+               <!--  <p id="donate">Donate</p> -->
+                <button type="button" class="donateButton">Click Me!</button>
+
+                <!-- <button type="button">Click Me!</button> -->
 
             </div>
             <!-- <div class="donate">
@@ -82,20 +89,21 @@
 
             
         </article>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+ <!--        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
+<!--         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
+        </script> -->
         <footer>
              <img src="img/skyline-two.png" alt="Chicago">
             <p>-MADE WITH &#x02665 IN CHICAGO-</p>
