@@ -14,18 +14,22 @@ var currentTickerIteration = 0;
 
 $(document).ready(function() {
   var h = $( window ).height();
-  console
   $("#topDiv").height(h);
   $(".back").height(h);
-
-});
-
-$(document).ready(function() {
-  var h2 = $( window ).height();
+   var h2 = $( window ).height();
   $(".about").height(h2);
   createTicker();
-
+  $("#thanksMessage").hide();
+   $("#donateButton").hover(function() {
+      $("#thanksMessage").show();
+      console.log("hover on donate button");
+    },
+      function() {
+      $("#thanksMessage").hide();  
+    });
 });
+
+
 
 
 function createTicker(){
@@ -79,6 +83,8 @@ function typetext() {
     tickerText = "";
   } 
 }
+
+
 
 
 // $(.movingText).scroll(function()

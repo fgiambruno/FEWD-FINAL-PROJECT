@@ -80,6 +80,7 @@ nav li a {
     font-family: "Avenir";
     font-style: sans-serif;
     font-size: 1em;
+    font-weight: 700;
     text-decoration: none;
     float: right;
     padding-right: 20px;
@@ -95,7 +96,8 @@ nav li a {
 }*/
 
 .tabs a:hover{
-  color: red;
+  color: rgb(255,198,34);
+  font-weight: 700;
 }
 /*.tabs:hover {
    
@@ -265,13 +267,24 @@ img {
 
 /*.about img*/
 .imageCircle{
-  border-radius: 50%;
+  /*border-radius: 50%;*/
   height: 80%;
   /*width: 100%;*/
   padding-left: 10%;
   float: left;
-  padding-top: 6%;
+  padding-top: 4%;
   /*padding-bottom: 10%;*/
+}
+
+.about h6 {
+ float: right;
+ padding-top: 0;
+ color: black;
+ font-size: 4.5em;
+ font-family: "Brush Script MT", cursive;
+ margin-right: 27%;
+ margin-top: 40px;
+
 }
 
 hr {
