@@ -1,12 +1,25 @@
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 
-    if (scroll >= 700) {
-        console.log('works')
+    $(".tabs").children().removeClass("activeTabs");
+    if (scroll >= 2200) {
         $("nav").addClass("scrolling");
+        $("#voluteerItem").children().addClass("activeTabs");
+    }else {
+      if (scroll >= 1500) {
+        $("nav").addClass("scrolling");
+        $("#aboutUsItem").children().addClass("activeTabs");
     } else {
+      if (scroll >= 700) {
+        $("nav").addClass("scrolling");
+        $("#adoptItem").children().addClass("activeTabs");
+      } else {
         $("nav").removeClass("scrolling");
-    }
+      }
+    }  
+  }
+     
+    
 });
 
 var tickerIterations = 0;
@@ -27,6 +40,10 @@ $(document).ready(function() {
       function() {
       $("#thanksMessage").hide();  
     });
+   $(".tabs").click(function() {
+      $(".tabs").children().removeClass("activeTabs");
+      $(this).children().addClass("activeTabs");
+   });
 });
 
 

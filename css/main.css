@@ -94,6 +94,9 @@ nav li a {
     color: yellow;
     overflow: hidden;
 }*/
+.activeTabs {
+  color: rgb(239,120,9);
+}
 
 .tabs a:hover{
   color: rgb(255,198,34);
@@ -382,7 +385,13 @@ footer {
 footer p{
   color: #ffffff;
   text-align: center;
+}
 
+footer h2 {
+  font-size: 1em;
+  color: rgb(190,226,250);
+  font-family: "Lucida Sans Typewriter";
+  font-weight: 300;
 }
 /*footer img*/
 .skyline{
@@ -397,17 +406,17 @@ footer p{
   font-size: 1em;
 }
 
-.footerLinks img{
+/*.footerLinks img{
   display: inline-block;
   height: 50px;
-  /*align-items: center;*/
+  
   float: left;
-  /*margin-left: 200px;*/
+
   padding-left: 100px;
   padding-right: 10px;
   padding-top: 30px;
 }
-
+*/
 
 /*--------------------------------------*/
 /*-------------RESPONSIVE---------------*/
