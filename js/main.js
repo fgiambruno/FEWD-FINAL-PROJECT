@@ -23,3 +23,18 @@ $(document).ready(function() {
   $(".about").height(h2);
 
 });
+
+// $(.movingText).scroll(function()
+// var settings = {
+//   // configuration for the mouseenter event
+//   animMouseenter    : {
+//     'mText' : {speed : 350, easing : 'easeOutExpo', delay : 140, dir : 1},
+//     'sText' : {speed : 350, easing : 'easeOutExpo', delay : 0, dir : 1},
+//     'icon'  : {speed : 350, easing : 'easeOutExpo', delay : 280, dir : 1}
+//   },
+// $(document).ready(function() {
+//   var w = $( window ).width();
+//   $("#topDiv").width(w);
+//   $(".back").width(w);
+
+// });
